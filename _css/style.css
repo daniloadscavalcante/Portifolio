@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif, Roboto;
+    overflow-x: hidden;
+}
+.row-center{
+    background-color: red;
+    width: 90%;
+    margin: auto;
+}
+
+/*Header*/
+.header-top{
+    display: flex;
+    background: green;
+    justify-content:space-between;
+}
+.nav-wrapper{
+  
+}
+.title-name{
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px;
+}
+ul.menu{
+    display: flex;    
+}
+.menu li{
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 30px;    
+    cursor: pointer;
+}
+.menu a{
+    text-decoration: none;      
+    color: #fff; 
+}
+.menu a:hover{
+    border-bottom: 1px solid #1B2029;
+    
+}
+
+/*Introduction*/
+.capa{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    justify-content:space-around;
+    padding-top: 10vh;
+}
+.box-introduction{
+    width: 30vw;
+    padding: 40px;
+   /* background: orange    */
+}
+h1{
+    font-size:  2.2em;
+
+}
+.box-introduction p:nth-child(2){
+    color: #ddd;
+    margin: 10px auto;
+    font-size: 1.3em;
+}
+.box-introduction p {
+    font-size: 18px;
+    color:#444;
+    line-height: 1.4;
+}
+.btn-contact-me{
+    padding: 15px 30px;
+    margin: 20px auto;
+    color: #fff;
+    background-color:#1B2029;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+.btn-contact-me:hover{
+    background-color:#161923;
+    border:#040B18;
+    
+}
+/*Img - Perfil*/
+.img-perfil{
+   /* background: yellow;*/
+    width: 300px;
+}
+.img-perfil img{
+    border-radius: 50px 30px 200px 50px;
+}
+
+@media only screen and (max-width:1024px){
+    .box-introduction{
+        padding: 10px;
+    }    
+    .box-introduction p{
+        font-size: 1.1em;
+    }
+    
+}
