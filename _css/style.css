@@ -8,7 +8,7 @@ body{
     overflow-x: hidden;
 }
 .row-center{
-    background-color: red;
+   /* background-color: red;*/
     width: 90%;
     margin: auto;
 }
@@ -51,11 +51,11 @@ ul.menu{
     width: 70vw;
     margin: auto;
     justify-content:space-around;
-    padding-top: 10vh;
+    padding-top: 30vh;
 }
 .box-introduction{
     width: 30vw;
-    padding: 40px;
+    
    /* background: orange    */
 }
 h1{
@@ -88,12 +88,12 @@ h1{
     
 }
 /*Img - Perfil*/
-.img-perfil{
-   /* background: yellow;*/
-    width: 300px;
+.box-img-perfil{
+      
 }
-.img-perfil img{
-    border-radius: 50px 30px 200px 50px;
+.box-img-perfil img{
+    border-radius: 100px 30px 100px 50px; 
+       
 }
 
 @media only screen and (max-width:1024px){
