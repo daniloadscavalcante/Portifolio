@@ -11,7 +11,7 @@ a, ul, li{
     text-decoration: none;
 }
 body{   
- /* overflow-x: hidden;  */
+ overflow-x: hidden;  
 }
 h1,h2,h3{
     font-family: Poppins, sans-serif;
@@ -128,6 +128,7 @@ h1{
     color:#444;
     line-height: 1.4;   
     margin-top: 0.8rem; 
+    margin-bottom: 2.5rem;
     font-family: Roboto; 
 }
 .btn-contact-me, .btn-curriculo{
@@ -597,6 +598,9 @@ h1{
     .menu a:hover{
         border-bottom: 2px dotted #8880FE;
     }
+    .btn-contact-me, .btn-curriculo{
+        padding: 15px 20px;       
+    }
    .capa{
       width:80%;
 
@@ -639,10 +643,9 @@ h1{
        margin: auto;
    }
    .about_photo_me{
-       background-image: url(./Danilo-about.png);
+       background-image: url(../_img/Danilo-about.png);
        background-repeat: no-repeat;
        background-size: 60%;
-       background-position: center center;
-       
+       background-position: center center;      
    }
 }
