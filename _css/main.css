@@ -152,7 +152,7 @@ h1{
 /*====About Me====*/
 .about{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 .about h2{
@@ -169,6 +169,12 @@ h1{
     font-size: 1.2rem; 
     font-family: Roboto;   
     line-height: 1.5;
+}
+.description_about p {
+    font-size: 18px;
+    color:#444;
+    line-height: 1.4;   
+    margin-top: 0.8rem;      
 }
 .info_me{
     display: grid;
@@ -256,7 +262,7 @@ h1{
 }
 
 /*====Section skill frontend====*/
-.ruler_html::before, .ruler_css::before, .ruler_js::before, .ruler_figma::before, .ruler_photoshop::before, .ruler_gimp::before, .ruler_canva::before{
+.ruler_html::before, .ruler_css::before, .ruler_js::before, .ruler_figma::before, .ruler_photoshop::before, .ruler_gimp::before, .ruler_canva::before, .ruler_git::before{
     content: "";
     display: block;
     width: 50%;
@@ -282,7 +288,9 @@ h1{
 .ruler_canva::before{
     width: 70%;
 }
-
+.ruler_git::before{
+    width: 20%;
+}
 .title_tech{
     position: relative;
 }
@@ -317,6 +325,10 @@ h1{
     content:"70%";
 }
 
+/*Git*/
+.title_git::after{
+    content:"20%";
+}
 /*====Qualificação====*/
 .info_education{
     display: flex;
@@ -553,16 +565,13 @@ h1{
     }     
 }
 @media screen and (min-width:900px){
-   .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;  
-    z-index: 1;    
-   }
-   .box-img-perfil img{
-    width: 220px;
-}
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;  
+        z-index: 1;    
+    }    
     .nav_header{
         display: flex;            
         padding: 0;        
@@ -618,19 +627,25 @@ h1{
       width:80%;
 
    }
+   .box-img-perfil img{
+    width: 209px;
+    }
+   .about{    
+    margin-top: 10%;
+    }
+    .about_photo_me{
+        width: 50vw;
+    }
    .about_photo_me img{    
     width:220px;  
     padding-top: 15px;
-  }
+    }
    .about_box_description{
        display: flex;
        width: 80%;
        margin: auto;
        
-   }
-   .about_photo_me{
-       width: 50vw;
-   }
+   }   
    .description_about{       
        width: 50vw;
    }
@@ -648,8 +663,7 @@ h1{
    .flex_port_item img{ 
         margin-top: 2rem;       
         border-radius: 10px;
-    }
-  
+    }  
    .port_item_description{       
        width: 40vw;
        margin-left: 10px;
@@ -661,5 +675,5 @@ h1{
    }
    .box_footer{
     padding-bottom: 0;
-}
+   }
 }
