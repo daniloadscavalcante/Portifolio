@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -151,13 +152,20 @@ h1{
 /*====About Me====*/
 .about{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
 }
+
 .about h2{
     margin-bottom: 1.5rem;
 }
+
+.about_photo_me img{
+  border-radius: 40px 100px 40px 110px;
+  width:170px;  
+  padding-top: 15px;
+}
 .about p{
-    padding: 30px 0px;
+    padding: 2.5rem 10px;
     font-size: 1.2rem; 
     font-family: Roboto;   
     line-height: 1.5;
@@ -171,7 +179,7 @@ h1{
 }
 .item_info_me{
     text-align: center; 
-    margin-bottom: 40px;    
+    margin-bottom: 20px;    
     font-family:roboto; 
 }
 .item_info_me .number{
@@ -382,13 +390,15 @@ h1{
 }
 .flex_port_item img{
     width: 100%;
+    box-shadow: 0px 0px 1px;
 }
 .flex_port_item h4{
     margin: 10px auto;
 }
 .flex_port_item p{
     font-size: 1em;
-    font-family: Roboto; 
+    font-family: 'Open Sans', sans-serif;
+    color:#666
 }
 
 /*====Btn link projects====*/
@@ -429,9 +439,11 @@ h1{
 .box_title_portifolio{
     padding: 20px;
     text-align: center;
+    padding-bottom: 30px;
 }
 .box_title_portifolio p{
-    font-family: Roboto; 
+    font-family: 'Open Sans', sans-serif;
+    color:#666
 }
 .box_title_portifolio h2{
     margin-bottom: 1rem;
@@ -442,21 +454,22 @@ h1{
     font-family: poppins;
     font-weight: 450;
     text-align: center;
-    background-color: #444;
+    padding-bottom: 35px;
 }
 .box_footer::after {
     content: "";
-    width: 25%;
+    text-align: center;
+    width: 70px;
     height: 2px;
     background: orange;
     display: block;
-    margin: auto;
+    margin: auto;    
 }
 .flex_port_item h4::after{
     content: "";
     display: block;       
     bottom: 0;
-    width: 183px;
+    width: 20px;
     height: 3px;
     background-color: orange;
 }
@@ -605,17 +618,20 @@ h1{
       width:80%;
 
    }
+   .about_photo_me img{    
+    width:220px;  
+    padding-top: 15px;
+  }
    .about_box_description{
        display: flex;
        width: 80%;
        margin: auto;
-       background-color:blue;
+       
    }
    .about_photo_me{
        width: 50vw;
    }
-   .description_about{
-       background-color:orange;
+   .description_about{       
        width: 50vw;
    }
    .box_skills{
@@ -629,10 +645,11 @@ h1{
    .flex_port_item{
        display: flex !important;             
    }
-   .flex_port_item img{
-        height: 100%;
+   .flex_port_item img{ 
+        margin-top: 2rem;       
         border-radius: 10px;
     }
+  
    .port_item_description{       
        width: 40vw;
        margin-left: 10px;
@@ -642,10 +659,7 @@ h1{
        width: 70%;
        margin: auto;
    }
-   .about_photo_me{
-       background-image: url(../_img/Danilo-about.png);
-       background-repeat: no-repeat;
-       background-size: 60%;
-       background-position: center center;      
-   }
+   .box_footer{
+    padding-bottom: 0;
+}
 }
