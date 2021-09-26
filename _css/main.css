@@ -490,7 +490,7 @@ h1{
 @media screen and (min-width:430px){
     .box-img-perfil img{
         width: 170px;
-    }
+    }   
 }
 @media  screen and (min-width:600px) {
     .capa{
@@ -571,7 +571,7 @@ h1{
         left: 0;
         width: 100%;  
         z-index: 1;    
-    }    
+    }      
     .nav_header{
         display: flex;            
         padding: 0;        

@@ -1,12 +1,20 @@
+
+const navLink = document.querySelectorAll('.nav_link');
+
+navLink.forEach(item => {
+    item.addEventListener('click', removeNav);
+});
+function removeNav(){      
+     document.querySelector(".nav_wrapper").style.bottom="-100%";            
+}
+
+/*Hide/Show  menu mobile */
 function abrirMenu() {
-    document.getElementById("nav_wrapper").style.bottom="0";    
-    document.querySelector("#open-menu").style.display="none";
-    document.querySelector(".title-name").style.display="none";
+    document.getElementById("nav_wrapper").style.bottom="0";   
+    
 }
 function closeMenu(){
-    document.querySelector(".nav_wrapper").style.bottom="-100%";
-    document.querySelector("#open-menu").style.display="block";
-    document.querySelector(".title-name").style.display="block";
+    document.querySelector(".nav_wrapper").style.bottom="-100%";    
 }
 
 /*Hide/Show  section skill */
