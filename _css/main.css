@@ -298,40 +298,7 @@ h1{
     position: relative;
 }
 
-/*====Porcentagem das tecnologia====*/
-.title_tech::after, .title_html::after, .title_css::after,  .title_js::after{
-    content: "50%";
-    position: absolute;
-    right:0;
-    color: #444;
-    font-family: Poppins, sans-serif;
-    font-size: .8rem;
-}
-/*js*/
-.title_js::after{
-    content: "10%";
-}
-/*figma*/
-.title_figma::after{
-    content: "20%";
-}
-/*gimp*/
-.title_gimp::after{
-    content: "40%";
-}
-/*photoshop*/
-.title_photoshop::after{
-    content: "30%";
-}
-/*canva*/
-.title_canva::after{
-    content:"70%";
-}
 
-/*Git*/
-.title_git::after{
-    content:"20%";
-}
 /*====Qualificação====*/
 .info_education{
     display: flex;
