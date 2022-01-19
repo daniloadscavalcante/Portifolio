@@ -20,6 +20,23 @@ h1,h2,h3{
     text-align: center;
 }
 
+[data-anime]{
+    opacity: 0;
+    transition: all .3s;
+}
+[data-anime="center"]{
+    transform: translate3d(0, 0, 0);
+}
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 .row-center{
     width: 90%;
     margin: auto;
@@ -98,8 +115,7 @@ h1,h2,h3{
     flex-direction: column;
     width: 90vw;
     margin: auto;
-    padding-top: 7vh; 
-   
+    padding-top: 7vh;    
 }
 .box-img-perfil, .box-introduction{
       text-align: center;
@@ -465,7 +481,8 @@ h1{
 @media  screen and (min-width:600px) {
     .capa{
         flex-direction: row;
-        padding-top: 20vh;
+        /*padding-top: 20vh; RETIRAAAA PORQUE ESTA ATRAPALHANDO PARA SABER DISTANCIA DA SECTION COM JS*/
+        padding-bottom: 20%;
     }
     .box-img-perfil{
         width: 35vw;
@@ -497,6 +514,9 @@ h1{
     .item_info_me{
         font-size:  1.3rem;
     }
+    .about{    
+        margin-top: 0;    
+        } 
     .btn-curriculo{
         padding: 20px 30px;
         font-size: 1.1rem;       
@@ -595,26 +615,22 @@ h1{
     }
    .capa{
       width:80%;
-
+      padding-bottom: 10%;
    }
    .box-img-perfil img{
     width: 209px;
     }
    .about{    
-    margin-top: 10%;
-    }
-    .about_photo_me{
-        width: 50vw;
-    }
+    margin-top: 0;    
+    }   
    .about_photo_me img{    
     width:220px;  
     padding-top: 15px;
     }
    .about_box_description{
        display: flex;
-       width: 80%;
-       margin: auto;
-       
+       width: 85%;
+       margin: auto;       
    }   
    .description_about{       
        width: 50vw;

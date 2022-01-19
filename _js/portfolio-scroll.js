@@ -1,31 +1,28 @@
 
-const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+const menuItems = document.querySelectorAll('.menu a[href^="#"]');//pega tudo que começa com # ele vai pegar
 
-menuLinks.forEach(link => {
-    link.addEventListener('click', scrolltoID);
+menuItems.forEach(item => {
+  item.addEventListener('click', scroolToIdOnclick);
 })
 
-
-function getScrollTopByHref(element){
-    const id = element.getAttribute('href');
-    return document.querySelector(id).offsetTop;
+function scroolToIdOnclick(event) {
+  event.preventDefault();
+  const element = event.target; //mostran o elemento que foi clicado
+  const idOfsection = element.getAttribute('href');//pega só o atributo href
+  const section = document.querySelector(idOfsection).offsetTop;//pega section
+  
+/*
+  window.scroll({
+    top: section,
+    behavior: "smooth",
+  });
+*/
+smoothScrollTo(0, section);
 }
 
-function scrolltoID(event) {
-    event.preventDefault();
-    const section = getScrollTopByHref(event.target) - 20;
-    scrollToPosition(section);
-    smoothScrollTo(0, distancethetop, 700);
-
-}
-function scrollToPosition(section) {
-    
-    smoothScrollTo(0, section);
-}
-
-/**
+/*
  * compatibilidade com outros navegadores * 
- * 
+ *
  * Smooth scroll animation
  * @param {int} endX: destination x coordinate
  * @param {int} endY: destination y coordinate
