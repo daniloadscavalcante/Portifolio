@@ -555,6 +555,9 @@ h1{
     }     
 }
 @media screen and (min-width:900px){
+    body{
+        margin-top: 90px;
+    }
     .header{
         position: fixed;
         top: 0;
