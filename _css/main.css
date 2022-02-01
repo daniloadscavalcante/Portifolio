@@ -11,7 +11,7 @@ a, ul, li{
     list-style-type: none;
     text-decoration: none;
 }
-body{   
+html, body{   
  overflow-x: hidden;  
 }
 h1,h2,h3{

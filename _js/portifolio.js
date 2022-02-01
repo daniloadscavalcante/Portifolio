@@ -92,7 +92,6 @@ function showEducation(){
     //se nao tive elemento animado na pagina essa funçao nao escuta
     if(target.length){
         window.addEventListener('scroll',debounce(function(){ // função animeScroll  sera ativada com usuario der scroll
-            animeScroll();
-            console.log('asjnacs')
+            animeScroll();            
         }, 150));
     } 
