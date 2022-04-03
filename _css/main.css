@@ -281,7 +281,7 @@ h1{
 }
 
 /*====Section skill frontend====*/
-.ruler_html::before, .ruler_css::before, .ruler_js::before, .ruler_figma::before, .ruler_photoshop::before, .ruler_gimp::before, .ruler_canva::before, .ruler_git::before{
+.ruler_html::before, .ruler_css::before, .ruler_js::before, .ruler_bs::before, .ruler_figma::before, .ruler_photoshop::before, .ruler_gimp::before, .ruler_canva::before, .ruler_git::before{
     content: "";
     display: block;
     width: 50%;
@@ -293,6 +293,9 @@ h1{
 
 /*====Aumenta a cor do grafico "cor do bg"====*/
 .ruler_js::before{
+    width: 10%;
+}
+.ruler_bs::before{
     width: 10%;
 }
 .ruler_figma::before{
@@ -308,8 +311,9 @@ h1{
     width: 70%;
 }
 .ruler_git::before{
-    width: 20%;
+    width: 10%;
 }
+
 .title_tech{
     position: relative;
 }
