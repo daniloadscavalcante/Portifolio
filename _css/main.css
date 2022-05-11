@@ -172,9 +172,8 @@ h1{
     text-align: center;
     margin-top: 25%;
 }
-
 .about h2{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;    
 }
 
 .about_photo_me img{
@@ -184,16 +183,16 @@ h1{
 }
 .about p{
     padding: 2.5rem 10px;
-    font-size: 1.2rem; 
+    font-size: 1rem; 
     font-family: Roboto;   
     line-height: 1.5;
-}
-.description_about p {
+    text-align: justify;   
     font-size: 18px;
     color:#444;
     line-height: 1.4;   
-    margin-top: 0.8rem;      
+    margin-top: 0.8rem;  
 }
+
 .info_me{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -204,10 +203,10 @@ h1{
 .item_info_me{
     text-align: center; 
     margin-bottom: 20px;    
-    font-family:roboto; 
+    font-family:roboto;     
 }
 .item_info_me .number{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     display: block;
     font-weight: 800;
     font-family:roboto;
@@ -358,6 +357,8 @@ h1{
     font-size: .8rem;    
 }
 
+
+
 /*====Div Work====*/
 .box_experience{     
     text-align:right;             
@@ -376,6 +377,8 @@ h1{
     grid-column: 2 / -1;    
     padding-right: 1rem;     
 }
+
+
 
 /*====Projects====*/
 .carrossel{
@@ -403,6 +406,7 @@ h1{
     color:#666
 }
 
+
 /*====Btn link projects====*/
 .btn_link{
     padding: 6px 1.5rem;
@@ -421,6 +425,7 @@ h1{
     margin-left: 7px;    
 }
 
+
 /*====Contact Me====*/
 .box_contactme{
     width: 80%;
@@ -437,6 +442,7 @@ h1{
     font-size: 1.5rem;
 }
 
+
 /*====About Portifolio====*/
 .box_title_portifolio{
     padding: 20px;
@@ -450,6 +456,8 @@ h1{
 .box_title_portifolio h2{
     margin-bottom: 1rem;
 }
+
+
 /*====Footer====*/
 .box_footer{
     font-size: 1.2rem;
@@ -476,6 +484,8 @@ h1{
     background-color: orange;
 }
 
+
+
 /*====Midias queries====*/
 @media screen and (min-width:430px){
     .box-img-perfil img{
@@ -484,8 +494,7 @@ h1{
 }
 @media  screen and (min-width:600px) {
     .capa{
-        flex-direction: row;
-        /*padding-top: 20vh; RETIRAAAA PORQUE ESTA ATRAPALHANDO PARA SABER DISTANCIA DA SECTION COM JS*/
+        flex-direction: row;        
         padding-bottom: 20%;
     }
     .box-img-perfil{
@@ -631,16 +640,19 @@ h1{
     margin-top: 0;    
     }   
    .about_photo_me img{    
-    width:220px;  
+    width: 250px;  
     padding-top: 15px;
-    }
+    }    
    .about_box_description{
        display: flex;
+       justify-content: space-between;
+       
        width: 85%;
-       margin: auto;       
+       margin: auto;                          
    }   
    .description_about{       
-       width: 50vw;
+       width: 40vw;
+       margin-left: 40px;       
    }
    .box_skills{
        width: 80%;
