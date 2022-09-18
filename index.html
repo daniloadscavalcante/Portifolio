@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./_css/main.css">
-  
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     
     <title>Portifolio Danilo</title>
@@ -20,12 +20,11 @@
     <div class="row-center">
 
         <header class="header">
-
             <div class="nav_header">
                 <span class="title-name">Danilo</span>
-                    <span class="open-menu" id="open-menu" onclick="abrirMenu()"><i class="fas fa-th-large"></i></span>
+                <span class="open-menu" id="open-menu" onclick="abrirMenu()"><i class="fas fa-th-large"></i></span>
 
-                    <nav class="nav_wrapper" id="nav_wrapper" >     
+                <nav class="nav_wrapper" id="nav_wrapper" >     
                                           
                         <ul class="menu">
                             <li><a href="#introduction" class="nav_link"><i class="fas fa-home"></i>Home</a></li>
@@ -36,18 +35,16 @@
                             <li><a href="#contactme" class="nav_link"><i class="fas fa-sign-in-alt"></i>Contactme</a></li>
                         </ul>
                         <span class="close-menu" onclick="closeMenu()">&times;</span>
-                    </nav>
+                 </nav>
             </div>
         </header>
 
          <main>
 
             <!--Introduction-->
-            <section id="introduction" >
+            <section id="introduction">
             <div class="capa" data-anime="center">
-                <div class="box-img-perfil">
-                    <img src="./_img/Danilo.png" alt="thumb foto perfil">
-                </div>
+               
                 <div class="box-introduction">
                     <h1>Hi, I'am Danilo</h1>
                     <a class="social_midia" href="https://www.linkedin.com/in/daniloadscavalcante/"><i class="uit uit-linkedin-alt"></i></a>
@@ -56,7 +53,7 @@
                     <p>Front end junior.</p>
                     <p>Sou apaixonado por tecnologias, desenvolver e proporcionar algo inovador não tem preço. Front end é o meu mundo, fazer os sonhos das pessoas se tornarem realidade é algo incrivel. #frontend </p>
                     
-                    <a href=" http://wa.me/5511944939323" class="btn-contact-me">Contact Me</a>
+                    <a href=" http://wa.me/5511944939323" class="btn-contact-me btn">Contact Me</a>
                     
                 </div>                
             </div>
@@ -64,15 +61,13 @@
 
             <!--About Me-->
             <section class="row-center" id="about-me" >
-                <div class="about" data-anime="left">
-                    <h2>About Me</h2>
+                <div class="about" data-anime="left">        
 
                     <div class="about_box_description">
-
                         <div class="about_photo_me">                            
                             <img src="_img/Danilo-about.png" alt="thumb foto perfil">                        
                         </div>
-
+                        <h2>About Me</h2>
                         <div class="description_about">
                             <p>
                                 Sou formado em Análise de sistemas pela Universidade Anhanguera (2016 – 2019), tive a oportunidade de conhecer o desenvolvimento web onde me fascinou e despertou a curiosidade de me aprofundar
@@ -80,24 +75,24 @@
                             </p>
                               <div class="box_info_me">
                                  <div class="info_me">
-                                     <div class="item_info_me">
-                                        <span class="number">12+</span>
-                                        <span>Completed<br> projects</span>
+                                        <div class="item_info_me">
+                                            <span class="number">12+</span>
+                                            <span>Completed<br> projects</span>
                                         </div>
                                         <div class="item_info_me">
-                                        <span class="number">05+</span>
-                                         <span>Company<br> worked</span>
+                                            <span class="number">05+</span>
+                                            <span>Company<br> worked</span>
                                         </div>
-                                        </div>
-                                    </div>
+                                  </div>
+                              </div>
 
              <!--CURRICULO-->  
-                        <form action="Curriculo.pdf"> 
-                                        <div class="curriculo">                                     
-                                <button class="btn-curriculo" type="submit">Download CV <i class="uit uit-download-alt"></i>
-                                </button>
-                            </div>
-                        </form>
+                            <form action="Curriculo.pdf"> 
+                                    <div class="curriculo">                                     
+                                            <button class="btn-curriculo btn" type="submit">Download CV <i class="uit uit-download-alt"></i>
+                                            </button>
+                                    </div>
+                            </form>
                         </div>
                     </div>            
                 </div>
@@ -105,52 +100,26 @@
 
             <!--SKILL-->
             <section id="skill">
-                <div class="box_skills" data-anime="right">
-
+                <div class="box_skills" data-anime="right">                    
+                    
                     <div class="box_in_section">
-                        <h2>Skills</h2>
-                        <p>My technical nivel.</p>
+                        <h2>Skills</h2>                       
+                        
                     </div>
 
                     <div class="box_skill_item">
+                        <img src="./_img/html5.svg" alt="">
+                        <img src="./_img/css3-simple.svg" alt="">
+                        <img src="./_img/java-script.svg" alt="">
+                        <img src="./_img/bootstrap.svg" alt="">
+                        <img src="./_img/github.svg" alt="">
+                        <img src="./_img/figma.svg" alt="">
+                        
+                    <div class="skills">                       
 
-                    <div class="skills">
-                        <span class="title_front" onclick="showFront()"><i class="fas fa-code"></i>Frontend developer<i class="fas fa-angle-down" class="arrow_down"></i></span>
-
-                        <div class="description description_front" id="box_front">
-                            <label class="title_html title_tech">HTML</label>
-                            <span class="ruler_html ruler" ></span>
-
-                            <label class="title_css title_tech">CSS</label>
-                            <span class="ruler_css ruler"></span>
-
-                            <label class="title_js title_tech">JAVASCRIPT</label>
-                            <span class="ruler_js ruler"></span>
-
-                            <label class="title_bs title_tech">BOOSTRAP 5</label>
-                            <span class="ruler_bs ruler"></span>
-
-                            <label class="title_git title_tech">GIT</label>
-                            <span class="ruler_git ruler"></span>
-                        </div>
+                       
                     </div>
-
-                    <div class="skills">
-                        <span class="title_front" onclick="showDesign()"><i class="fas fa-swatchbook"></i>Designer<i class="fas fa-angle-down"></i></span>
-
-                        <div class="description" id="box_design">
-                            <label class="title_figma title_tech">Figma</label>
-                            <span class="ruler_figma ruler"></span>
-
-                            <label class="title_photoshop title_tech">Photoshop</label>
-                            <span class="ruler_photoshop ruler"></span>
-                            
-                            <label class="title_gimp title_tech">Gimp</label>
-                            <span class="ruler_gimp ruler"></span>
-
-                            <label class="title_canva title_tech">Canva</label>
-                            <span class="ruler_canva ruler"></span>
-                        </div>
+                    
                     </div>
                 </div>
                 </div>               
@@ -241,7 +210,7 @@
                                     <h4>Freela - Studio </h4>
                                     <p>Esse projeto foi um freela, objetivo proposto foi atrair clientes de qualquer localidade, foi utilizado as tecnologias: html, css e javascript. Conceito de responsividade e design foram utilizados também.</p>
                                 
-                                    <a href="https://www.studiouniversofeminino.com.br" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://www.studiouniversofeminino.com.br" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -252,7 +221,7 @@
                                     <h4>Freela - Eletrônica</h4>
                                      <p>Esse projeto foi um freela, objetivo proposto aumentar a visibilidade e a demanda de serviços, foi utilizado as seguintes tecnologias: html, slick slider, css e javascript. Conceito de responsividade e design foram utilizados também.</p>
                                 
-                                    <a href="https://eletronicajaclesom.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://eletronicajaclesom.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -263,7 +232,7 @@
                                     <h4>Landing Page</h4>
                                     <p>Esse é um clone de uma landing page  realizado apenas para melhorar as habilidades. Obs: Todos direitos reservado <br><q><a href="https://www.agoraeufaloacademy.com/serie-gratuita" target="_blank" style="color: orange;">www.agoraeufaloacademy.com/serie-gratuita</a></q></p>
                                 
-                                    <a href="https://landing-page-ingles.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://landing-page-ingles.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -274,7 +243,7 @@
                                     <h4>Teste - empresa</h4>
                                     <p>Esse foi um teste de uma empresa para preencher a vaga de (estágio front end), foi fornecido layout feito no figma. Conclui esse desafio usando as tech, html,css, flexbox<br></p>
                                 
-                                    <a href="https://desafiochuva.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://desafiochuva.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -285,7 +254,7 @@
                                     <h4> Petshop</h4>
                                     <p>Site desenvolvido para colocar em prática os conhecimentos adquirido no curso de bootstrap, antes de codificar desenvolvi o prototipo no figma e posteriomente a codificação</p>
                                 
-                                    <a href="https://seupet.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://seupet.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -296,7 +265,7 @@
                                     <h4> Website - PizzaMiaIII</h4>
                                     <p>Site desenvolvido apenas para colocar em práticar tecnologias: html, css, javascript e bootstrap. Foi desenvolvido usando conceitos de design, resposividade.</p>
                                 
-                                    <a href="https://pizzamia3.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://pizzamia3.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                            
@@ -307,7 +276,7 @@
                                     <h4> Website - Mercado livre</h4>
                                     <p>Clone da pagina de anuncios do mercado livre, esse projeto foi desenvolvido para testa minhas habilidades nas tecnologias html e css. </p>
                                 
-                                    <a href="https://clonemercadolivre.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://clonemercadolivre.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -319,7 +288,7 @@
                                     <h4>Website - Fisioterapia</h4>
                                     <p>Projeto feito con conhecimentos adquirido no curso de front end, usando conceitos de desgin e responsividade. Projeto realizado no figma e posteriomente desenvolvido.</p>
                                 
-                                    <a href="https://fisiobody.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://fisiobody.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -330,7 +299,7 @@
                                     <h4>Website - Mobile first</h4>
                                     <p>Projeto feito no curso de web design, utilizando a metodologia mobile first, demostrando as vantagens e praticidade da metodologia </p>
                                 
-                                    <a href="https://conceitoresponsive.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://conceitoresponsive.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -341,7 +310,7 @@
                                     <h4>Website - Strata</h4>
                                     <p>Projeto feito no curso de web design, colocando em pratíca todo conhecimento adquirido no modulo do curso. Conceitos de semântica, tabelas, tags para expor codigos, lista ordenada. Porém não é repsonsivo. </p>
                                 
-                                    <a href="https://projects-strata.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://projects-strata.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -352,7 +321,7 @@
                                     <h4>Tela Login game</h4>
                                     <p>Projeto feito para explorar a criatividade, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://gamesnipe.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://gamesnipe.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -363,7 +332,7 @@
                                     <h4>Card Frontend Mentor</h4>
                                     <p>Desafio do frontend mentor concluido, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://card-frontendmentor2.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://card-frontendmentor2.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -374,7 +343,7 @@
                                     <h4>Clone da tela de login facebook</h4>
                                     <p>Clone da tela de login do facebook, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM e conceitos de mobile first. </p>
                                 
-                                    <a href="https://clone-facebook-login.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://clone-facebook-login.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -385,7 +354,7 @@
                                     <h4>Clone da tela de login do Wise up</h4>
                                     <p>Clone da tela de login do Wise up, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM e responsividade. </p>
                                 
-                                    <a href="https://clone-wise-up.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://clone-wise-up.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -396,7 +365,7 @@
                                     <h4>Card Frontend Mentor</h4>
                                     <p>Desafio do frontend mentor concluido, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://3-cardfrontendmentor.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://3-cardfrontendmentor.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -407,7 +376,7 @@
                                     <h4>Card Frontend Mentor</h4>
                                     <p>Desafio do frontend mentor concluido, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://card-done-frontendmentor.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://card-done-frontendmentor.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
@@ -418,7 +387,7 @@
                                     <h4>Landing page</h4>
                                     <p>Desafio de uma landing page, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://teste-webdesign.netlify.app/" class="btn_link" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://teste-webdesign.netlify.app/" class="btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>                        
                         

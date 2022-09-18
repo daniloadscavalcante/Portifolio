@@ -5,16 +5,16 @@ navLink.forEach(item => {
     item.addEventListener('click', removeNav);
 });
 function removeNav(){      
-     document.querySelector(".nav_wrapper").style.bottom="-100%";            
+     document.querySelector(".nav_wrapper").style.top="0";            
 }
 
 /*Hide/Show  menu mobile */
 function abrirMenu() {
-    document.getElementById("nav_wrapper").style.bottom="0";   
+    document.getElementById("nav_wrapper").style.top="0";   
     
 }
 function closeMenu(){
-    document.querySelector(".nav_wrapper").style.bottom="-100%";    
+    document.querySelector(".nav_wrapper").style.top="-100%";    
 }
 
 /*Hide/Show  section skill */

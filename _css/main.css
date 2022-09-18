@@ -19,6 +19,12 @@ h1,h2,h3{
     font-weight: 500;
     text-align: center;
 }
+body{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
 
 [data-anime]{
     opacity: 0;
@@ -37,35 +43,39 @@ h1,h2,h3{
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-.row-center{
+/*.row-center{
     width: 90%;
     margin: auto;
-}
+}*/
 .nav_header{
     display: flex;
     justify-content: space-between;      
     padding: 0.7rem 1.2rem;   
     position: fixed;
-    bottom: 0; 
+    top: 0; 
     left: 0;  
     width: 100%; 
     transition: .3s;  
-    background-color: #fff;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #360033 20%, #0b8793); 
+    border: 1px solid #0b8793;
     box-shadow: 0 -1px 4px rgba(0,0,0,.15); 
     z-index: 1;
 }
 
 .nav_wrapper{   
     position: fixed;
-    bottom: -100%; 
+    top: -100%; 
     left: 0; 
     width: 100%;   
     padding-top: 1.5rem;
     padding-bottom: 3rem;  
     box-shadow: 0 -1px 4px rgba(0,0,0,.15); 
-    border-radius: 1.5rem 1.5rem 0 0 ; 
+    border-radius: 0 0 1.5rem 1.5rem ; 
     transition: .3s; 
-    background-color: #fff;           
+    background: linear-gradient(to right, #360033 20%, #0b8793); 
+    border: 1px solid #0b8793;        
 }
 .menu{
     display: grid;
@@ -78,7 +88,7 @@ h1,h2,h3{
     flex-direction: column;
     align-items: center;
     font-size: .9rem;
-    color:#161923;
+    color: #fff;
     font-weight: bold;
     font-family: Poppins, sans-serif;
     font-weight: normal;
@@ -98,7 +108,7 @@ h1,h2,h3{
 }
 .nav_wrapper .close-menu{
     font-size: 40px;
-    color:#161923;  
+    color:#fff;  
     cursor: pointer;
     right: 7%;
     bottom: 4%;
@@ -110,20 +120,22 @@ h1,h2,h3{
 }
 
 /*====Introduction====*/
+#introduction{
+    position: relative;
+    padding-top: 40px;
+}
 .capa{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 90vw;
-    margin: auto;
-    padding-top: 7vh;    
+    height: 100vh;
+    margin: auto;      
 }
-.box-img-perfil, .box-introduction{
+.box-introduction{
       text-align: center;
 }
-.box-img-perfil img{
-    border-radius: 80px 30px 100px 50px; 
-    width: 150px; 
-}
+
 /*Social Midia*/
 .social_midia{
     padding: 5px;
@@ -136,15 +148,16 @@ h1,h2,h3{
 
 h1{
     font-size:  1.8em;
+    color: white;
 }
 .box-introduction p:nth-of-type(1){
-    color: rgb(32, 27, 27);
+    color: rgb(214, 199, 199);
     margin: 10px auto;
     font-size: 1.3em;     
 }
 .box-introduction p {
-    font-size: 18px;
-    color:#444;
+    font-size: 1rem;
+    color:rgb(209, 198, 198);
     line-height: 1.4;   
     margin-top: 0.8rem; 
     margin-bottom: 2.5rem;
@@ -154,43 +167,42 @@ h1{
     padding: 15px 30px;
     margin: 25px auto;
     color: #fff;
-    background-color:#1B2029;
+    background-color: #283997;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 1s ease-out;
     font-family: Arial, Helvetica, sans-serif;
 }
-.btn-contact-me:hover, .btn-curriculo:hover, .btn_link:hover{
-    background-color:#8880FE;
-    border:#040B18;
-    transition: all 0.5s;
+.btn:hover{
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #360033 20%, #0b8793); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #0b8793;    
 }
 
 /*====About Me====*/
-.about{
-    text-align: center;
-    margin-top: 25%;
-}
-.about h2{
-    margin-bottom: 1.5rem;    
-}
-
 .about_photo_me img{
   border-radius: 40px 100px 40px 110px;
   width:170px;  
   padding-top: 15px;
+}
+.about{
+    text-align: center;   
+    color: white; 
+}
+.about h2{
+      
 }
 .about p{
     padding: 2.5rem 10px;
     font-size: 1rem; 
     font-family: Roboto;   
     line-height: 1.5;
-    text-align: justify;   
+    text-align: center;   
     font-size: 18px;
-    color:#444;
-    line-height: 1.4;   
-    margin-top: 0.8rem;  
+    color:rgb(209, 198, 198);
+    line-height: 1.4;        
 }
 
 .info_me{
@@ -203,13 +215,16 @@ h1{
 .item_info_me{
     text-align: center; 
     margin-bottom: 20px;    
-    font-family:roboto;     
+    font-family:roboto;         
+}
+.item_info_me span{
+    color:rgb(209, 198, 198);   
 }
 .item_info_me .number{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: block;
-    font-weight: 800;
-    font-family:roboto;
+    font-weight: 800;    
+    color: white;
 }
 
 /*===Btn curriculo===*/
@@ -229,20 +244,18 @@ h1{
     padding: 25px 25px 30px;
     text-align: center;
 }
-.skills{    
-    text-align: left;
-    margin-bottom: 10px;
-}
-.title_front{
-    font-size: 1.2rem;
-    color: #1B2029;
-    display: block;
-    display: flex;   
-    align-items: center;
-    padding: 10px;    
-    cursor: pointer;
-}
 
+
+
+.box_skill_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box_skill_item img{
+    display: inline-block;
+    width: 60px;
+}
 /*====icon- font awesome====*/
 .title_front .fa-angle-up{
     display: none;
@@ -260,62 +273,10 @@ h1{
     margin-right: 5px;
     cursor: pointer;
 }
-.description{
-    width: 100%;
-    margin: auto;
-    margin-top: 30px;
-    display: inline-block;
-    padding: 0px 20px 0 40px;
-    display: none;
-}
-.description_front{
-    display: block;
-}
-.ruler{
-    display:block;
-    height: 5px;
-    background-color:#aeb0b3;
-    border-radius: 100px;
-    margin-bottom: 1.2rem;
-}
+
 
 /*====Section skill frontend====*/
-.ruler_html::before, .ruler_css::before, .ruler_js::before, .ruler_bs::before, .ruler_figma::before, .ruler_photoshop::before, .ruler_gimp::before, .ruler_canva::before, .ruler_git::before{
-    content: "";
-    display: block;
-    width: 50%;
-    height: 5px;
-    background-color:#1B2029;    
-    border-radius: 100px;
-    margin-top: .5rem;
-}
 
-/*====Aumenta a cor do grafico "cor do bg"====*/
-.ruler_js::before{
-    width: 10%;
-}
-.ruler_bs::before{
-    width: 10%;
-}
-.ruler_figma::before{
-    width:20%;
-}
-.ruler_photoshop::before{
-    width:30%;    
-}
-.ruler_gimp::before{
-    width:40%;
-}
-.ruler_canva::before{
-    width: 70%;
-}
-.ruler_git::before{
-    width: 10%;
-}
-
-.title_tech{
-    position: relative;
-}
 
 
 /*====Qualificação====*/
@@ -493,13 +454,15 @@ h1{
     }   
 }
 @media  screen and (min-width:600px) {
+   .box-introduction{
+    color: #fff;
+   }
     .capa{
         flex-direction: row;        
         padding-bottom: 20%;
     }
     .box-img-perfil{
-        width: 35vw;
-        align-items: center;
+        width: 35vw;        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -513,9 +476,7 @@ h1{
         text-align:left;
         font-size: 2rem;
     }
-    .btn-contact-me{
-        padding: 20px 30px;
-        font-size: 1.1rem;
+    .btn-contact-me{      
         border-radius: 15px;
     }
     h2{
@@ -534,15 +495,9 @@ h1{
         padding: 20px 30px;
         font-size: 1.1rem;       
     }
-    .box_skill_item{
-        display: flex;
-    }
-    .skills{
-        width: 50vw;
-    }
-    .title_front{
-        font-size: 1.5rem
-    }
+   
+    
+   
     .title_education{
         font-size: 1.5rem;
     }
