@@ -18,6 +18,7 @@ h1,h2,h3{
     font-family: Poppins, sans-serif;
     font-weight: 500;
     text-align: center;
+    color: #fff;
 }
 body{
     background: #0f0c29;  /* fallback for old browsers */
@@ -43,13 +44,10 @@ body{
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
-/*.row-center{
-    width: 90%;
-    margin: auto;
-}*/
 .nav_header{
     display: flex;
-    justify-content: space-between;      
+    justify-content: space-between;   
+    align-items: center;;   
     padding: 0.7rem 1.2rem;   
     position: fixed;
     top: 0; 
@@ -63,7 +61,10 @@ body{
     box-shadow: 0 -1px 4px rgba(0,0,0,.15); 
     z-index: 1;
 }
-
+.nav_header .name-perfil{
+    color: #0b8793;    
+    font-size: 1.5rem;    
+}
 .nav_wrapper{   
     position: fixed;
     top: -100%; 
@@ -99,13 +100,23 @@ body{
 .menu i{
     font-size: 1rem;
 }
-.open-menu{
-    color:#161923;
+.toggle{    
     cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 30px;   
 }
-.open-menu, .title-name{
-    font-size: 1.2rem;    
+.toggle span{
+    display: block;    
+    width: 100%;
+    height: 5px;
+    background-color: #283997;
+    border-radius: 5px;
 }
+.toggle span + span{
+    margin: 7px 0;
+}
+
 .nav_wrapper .close-menu{
     font-size: 40px;
     color:#fff;  
@@ -114,15 +125,13 @@ body{
     bottom: 4%;
     position: absolute;       
 }
-
 .close-menu:hover{
     color: #474b57;
 }
 
 /*====Introduction====*/
 #introduction{
-    position: relative;
-    padding-top: 40px;
+    position: relative;    
 }
 .capa{
     display: flex;
@@ -132,24 +141,44 @@ body{
     height: 100vh;
     margin: auto;      
 }
+.capa-img{
+    text-align: center;
+    max-width: 230px;
+    margin: 0 auto;
+    min-height: 160px;    
+}
+.capa-img img{
+    width: 100%;    
+    position: relative;;
+    animation: jump 1.2s linear infinite alternate;
+    display: inline-block;   
+}
+@keyframes jump{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(5px);
+    }
+}
 .box-introduction{
       text-align: center;
 }
-
-/*Social Midia*/
-.social_midia{
-    padding: 5px;
-    cursor: pointer;
-    font-size: 1.4rem;
-    cursor: pointer;
-    text-decoration: none;
-    color:#8880FE;
-}
-
-h1{
+.box-introduction h1{
+    margin: 10px 0;
     font-size:  1.8em;
     color: white;
 }
+
+/*Social Midia*/
+.midia_social{           
+    cursor: pointer;
+    text-decoration: none;   
+    font-size: 2rem;  
+    color: #0b8793; 
+}
+
 .box-introduction p:nth-of-type(1){
     color: rgb(214, 199, 199);
     margin: 10px auto;
@@ -160,10 +189,11 @@ h1{
     color:rgb(209, 198, 198);
     line-height: 1.4;   
     margin-top: 0.8rem; 
-    margin-bottom: 2.5rem;
+
     font-family: Roboto; 
 }
-.btn-contact-me, .btn-curriculo{
+.btn{
+    display: inline-block;
     padding: 15px 30px;
     margin: 25px auto;
     color: #fff;
@@ -177,7 +207,7 @@ h1{
 .btn:hover{
     background: #360033;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #360033 20%, #0b8793); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #360033 20%, #0b8793); 
     border: 1px solid #0b8793;    
 }
 
@@ -188,19 +218,17 @@ h1{
   padding-top: 15px;
 }
 .about{
-    text-align: center;   
-    color: white; 
+    text-align: center;  
 }
 .about h2{
-      
+    margin-top: 20px;
 }
+
 .about p{
-    padding: 2.5rem 10px;
+    padding: 2.5rem 20px;
     font-size: 1rem; 
-    font-family: Roboto;   
-    line-height: 1.5;
-    text-align: center;   
-    font-size: 18px;
+    font-family: Roboto;      
+    text-align: justify;      
     color:rgb(209, 198, 198);
     line-height: 1.4;        
 }
@@ -240,9 +268,8 @@ h1{
 .box_skills{
     text-align: center;
 }
-.box_in_section{
-    padding: 25px 25px 30px;
-    text-align: center;
+.title-sections{
+    padding: 25px 25px 21px;           
 }
 
 
@@ -257,91 +284,82 @@ h1{
     width: 60px;
 }
 /*====icon- font awesome====*/
-.title_front .fa-angle-up{
-    display: none;
-}
-.title_front #arrow-up{
-    display: none;
-    
-}
-.title_front .fa-angle-down, .fa-angle-up {
-    margin-left: auto;    
-    cursor: pointer;
-    
-}
-.title_front .fa-code, .fa-swatchbook{
-    margin-right: 5px;
-    cursor: pointer;
-}
 
-
-/*====Section skill frontend====*/
 
 
 
 /*====Qualificação====*/
-.info_education{
+.title_quali{
+    text-align: center;    
+    color: #5d8dda;
+}
+.subtitle_edu_wor{
     display: flex;
     justify-content: center;
     width: 90%;
     margin: auto;
-    color: #1B2029; 
+    color: #5d8dda; 
     font-size: 1.2rem;    
 }
-.title_education{
+.subtitle_edu_wor span{
     padding: 0px 20px;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
-.title_education:hover{
-    color:#8880FE;    
+.subtitle_edu_wor span:hover{
+    color: #0b8793;   
 }
 .icon_education{
     margin-right: 5px;
 }
+
+/*====Section Education====*/
 .box_education, .box_experience{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px 30px;      
+    grid-template-rows: repeat(2, 1fr);    
+    grid-gap: 20px 30px; 
+    margin: 0 30px;     
     box-sizing: border-box; 
+    color: white;
 }
+
 .grid-item{       
-    line-height: 1.5;            
+    line-height: 1.5;              
 }
 .box_education .grid-item:nth-child(1){
-    border-right: 1px solid yellow;
+    border-right: 1px solid #0b8793;
 }
 .grid-item p{
-    color: #474b57;
+    color: rgb(209, 198, 198);;
     font-size: .8rem;    
 }
 
 
-
-/*====Div Work====*/
+/*====Section Work====*/
 .box_experience{     
     text-align:right;             
 }
 #box_exper{
     display: none;
 }
-.box_experience .grid-item:nth-child(1){
-    padding-right: 1.3rem;  
+.box_experience .grid-item{
+    padding-left: 10px; 
 }
 .box_experience .grid-item:nth-child(2){
-    border-left: 1px solid yellow; 
-    padding-right: 1rem; 
+    border-left: 1px solid #0b8793;     
 }
-.box_experience .grid-item:nth-child(3){    
-    grid-column: 2 / -1;    
-    padding-right: 1rem;     
-}
+/*====Fim - Qualificação====*/
 
 
 
 /*====Projects====*/
+.titile-project{
+    text-align: center;
+}
+.titile-project p{
+    color: #5d8dda;
+}
 .carrossel{
     box-shadow: 0px 0px 4px #8880FE;    
     margin: auto;
@@ -360,18 +378,28 @@ h1{
 }
 .flex_port_item h4{
     margin: 10px auto;
+    color: #0b8793;
+}
+.flex_port_item h4::after{
+    content: "";
+    display: block;       
+    bottom: 0;
+    width: 20px;
+    height: 3px;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #360033 20%, #0b8793); 
 }
 .flex_port_item p{
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
-    color:#666
+    color: rgb(209, 198, 198);
 }
-
-
-/*====Btn link projects====*/
-.btn_link{
+.flex_port_item .btn{
     padding: 6px 1.5rem;
     background-color:#1B2029;
+    background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #360033 20%, #0b8793); 
     border: none;
     border-radius: 6px;
     color: #fff;
@@ -381,7 +409,7 @@ h1{
     font-size: 0.8rem; 
     font-family: Arial, Helvetica, sans-serif;  
 }
-.btn_link i {
+.flex_port_item .btn i {
     text-align:right;
     margin-left: 7px;    
 }
@@ -393,15 +421,14 @@ h1{
     margin: auto;
     text-align: center;   
     padding: 1.5rem; 
+    
 }
-.social_contact{
-    font-size: 2rem;    
+.box_contactme i {
+   font-size: 2rem;
+   color: #0b8793; 
 }
-.box_contactme .social_contact:nth-child(3){
-    color: green;
-    display: inline-block;
-    font-size: 1.5rem;
-}
+
+
 
 
 /*====About Portifolio====*/
@@ -410,12 +437,12 @@ h1{
     text-align: center;
     padding-bottom: 30px;
 }
-.box_title_portifolio p{
-    font-family: 'Open Sans', sans-serif;
-    color:#666
-}
 .box_title_portifolio h2{
     margin-bottom: 1rem;
+}
+.box_title_portifolio p{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(209, 198, 198);
 }
 
 
@@ -426,52 +453,43 @@ h1{
     font-weight: 450;
     text-align: center;
     padding-bottom: 35px;
+    color: #0b8793;
 }
 .box_footer::after {
     content: "";
     text-align: center;
     width: 70px;
     height: 2px;
-    background: orange;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #360033 20%, #0b8793); 
     display: block;
     margin: auto;    
 }
-.flex_port_item h4::after{
-    content: "";
-    display: block;       
-    bottom: 0;
-    width: 20px;
-    height: 3px;
-    background-color: orange;
-}
 
 
-
-/*====Midias queries====*/
-@media screen and (min-width:430px){
+/*====Midias queries==== 430*/
+@media screen and (min-width:500px){
     .box-img-perfil img{
         width: 170px;
     }   
 }
 @media  screen and (min-width:600px) {
-   .box-introduction{
-    color: #fff;
-   }
+    .box-introduction{
+        width: 60vw;        
+        order: -1;
+        text-align: left;
+    }
     .capa{
-        flex-direction: row;        
-        padding-bottom: 20%;
+        flex-direction: row; 
+        align-items: center;    
     }
     .box-img-perfil{
         width: 35vw;        
         display: flex;
         justify-content: center;
         align-items: center;
-    }    
-    .box-introduction{
-        width: 60vw;        
-        order: -1;
-        text-align: left;
-    }
+    }        
     h1{
         text-align:left;
         font-size: 2rem;
@@ -510,7 +528,7 @@ h1{
     .grid-item i{
         padding-right: 5px;
     }
-    .box_in_section p{
+    .title-sections p{
         font-size: 1.1rem;
     }   
     .btn_link{
@@ -550,10 +568,7 @@ h1{
         transition: .3s;           
         padding: 0;  
         box-shadow: none;           
-    }
-    .title-name{
-        line-height: 40px;
-    }
+    }  
     .menu{        
         display: flex;        
         padding: 0; 
@@ -561,7 +576,7 @@ h1{
         align-items: center;
         height: 40px;
     }
-    .menu i, .open-menu, .close-menu{
+    .menu i, .toggle, .close-menu{
         display: none;
     }    
     .menu li{
