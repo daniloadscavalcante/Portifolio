@@ -189,7 +189,6 @@ body{
     color:rgb(209, 198, 198);
     line-height: 1.4;   
     margin-top: 0.8rem; 
-
     font-family: Roboto; 
 }
 .btn{
@@ -203,6 +202,7 @@ body{
     cursor: pointer;
     transition: all 1s ease-out;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 .btn:hover{
     background: #360033;  /* fallback for old browsers */
@@ -324,15 +324,18 @@ body{
     color: white;
 }
 
-.grid-item{       
+.box_education .grid-item{       
     line-height: 1.5;              
 }
 .box_education .grid-item:nth-child(1){
     border-right: 1px solid #0b8793;
 }
-.grid-item p{
+.box_education .grid-item p{
     color: rgb(209, 198, 198);;
     font-size: .8rem;    
+}
+.box_education .grid-item i{
+    padding-right: 5px;
 }
 
 
@@ -395,19 +398,14 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: rgb(209, 198, 198);
 }
-.flex_port_item .btn{
-    padding: 6px 1.5rem;
+.flex_port_item .btn-port_item{
+    padding: 6px 1.5rem;         
+    margin: 7px auto;
+    font-weight: 600;     
+    font-size: 0.8rem;  
     background-color:#1B2029;
     background: -webkit-linear-gradient(to right,#360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #360033 20%, #0b8793); 
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: 600; 
-    display: inline-block;
-    margin-top: 15px;  
-    font-size: 0.8rem; 
-    font-family: Arial, Helvetica, sans-serif;  
+    background: linear-gradient(to right, #360033 20%, #0b8793);     
 }
 .flex_port_item .btn i {
     text-align:right;
@@ -468,82 +466,8 @@ body{
 }
 
 
-/*====Midias queries==== 430*/
-@media screen and (min-width:500px){
-    .box-img-perfil img{
-        width: 170px;
-    }   
-}
+/*====Midias queries====*/
 @media  screen and (min-width:600px) {
-    .box-introduction{
-        width: 60vw;        
-        order: -1;
-        text-align: left;
-    }
-    .capa{
-        flex-direction: row; 
-        align-items: center;    
-    }
-    .box-img-perfil{
-        width: 35vw;        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }        
-    h1{
-        text-align:left;
-        font-size: 2rem;
-    }
-    .btn-contact-me{      
-        border-radius: 15px;
-    }
-    h2{
-        font-size: 1.7em;
-    }
-    .item_info_me .number{
-      font-size: 1.5rem;  
-    }
-    .item_info_me{
-        font-size:  1.3rem;
-    }
-    .about{    
-        margin-top: 0;    
-        } 
-    .btn-curriculo{
-        padding: 20px 30px;
-        font-size: 1.1rem;       
-    }
-   
-    
-   
-    .title_education{
-        font-size: 1.5rem;
-    }
-    .grid-item .title_item{
-        font-size: 1.3rem;
-    }
-    .grid-item p {
-        font-size: 1rem;
-    }
-    .grid-item i{
-        padding-right: 5px;
-    }
-    .title-sections p{
-        font-size: 1.1rem;
-    }   
-    .btn_link{
-        padding: 10px 1.5rem;
-        font-size: 1rem;
-    }
-    .carrossel{
-        width: 70%;
-        padding: 10px;       
-    }     
-}
-@media screen and (min-width:900px){
-    body{
-        margin-top: 90px;
-    }
     .header{
         position: fixed;
         top: 0;
@@ -554,25 +478,27 @@ body{
     .nav_header{
         display: flex;            
         padding: 0;        
-        width: 80%;  
+        width: 100%;  
         height:40px;         
         position: static;
         margin: auto;
         box-shadow: none;        
     }
     .nav_wrapper{   
-        width: 50vw;
+        width: 100%;
         position:static;
         display: inline-block;       
         border-radius: 0 ; 
         transition: .3s;           
         padding: 0;  
-        box-shadow: none;           
+        box-shadow: none; 
+        border: none;
+        background: transparent;          
     }  
     .menu{        
         display: flex;        
         padding: 0; 
-        justify-content: center;
+        justify-content: right;
         align-items: center;
         height: 40px;
     }
@@ -580,14 +506,17 @@ body{
         display: none;
     }    
     .menu li{
-         padding: 10px;
+         padding: 3px;
          margin: 0;
+    }
+    .menu li:last-child a{
+        margin-right: 10px;
     }
     .menu a{    
         margin: 0;
         padding: 0;      
-        font-size: .9rem;
-        color:#161923;
+        font-size: .7rem;
+        color:#fff;
         font-weight: normal;
         cursor: pointer;
         display: inline;
@@ -596,6 +525,63 @@ body{
     .menu a:hover{
         border-bottom: 2px dotted #8880FE;
     }
+    /*Hero*/
+    .box-introduction{
+        width: 60vw;        
+        order: -1;
+        text-align: left;
+    }
+    .capa{
+        flex-direction: row; 
+        align-items: center;    
+    }          
+    .box-introduction h1{
+        text-align:left;        
+    }  
+    .item_info_me .number{
+        font-size: 1.5rem;  
+    }  
+    .box-introduction p:nth-last-child(2){
+        max-width: 600px;
+    }
+       
+    /*Section skill*/    
+    .grid-item .title_item{
+        font-size: 1.3rem;
+    }
+    .grid-item p {
+        font-size: 1rem;
+    }  
+   
+    .carrossel{
+        width: 70%;
+        padding: 10px;       
+    }   
+    .toggle{
+        display: none;
+    }    
+}
+@media screen and (min-width:900px){   
+    .nav_header{
+        display: flex;            
+        padding: 0;        
+        width: 80%;  
+        height:40px;         
+        position: static;
+        margin: auto;
+        box-shadow: none;        
+    }
+    .menu a{    
+        margin: 0;
+        padding: 0;      
+        font-size: .9rem;
+        color:#fff;
+        font-weight: normal;
+        cursor: pointer;
+        display: inline;
+        text-transform: uppercase;
+    }
+
     .btn-contact-me, .btn-curriculo{
         padding: 15px 20px;       
     }
