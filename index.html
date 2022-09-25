@@ -58,10 +58,12 @@
                         <a class="midia_social" href="mailto:daniloadscavalcante@gmail.com"><i class="uil uil-envelope"></i></a>
                         <a class="midia_social" href=" http://wa.me/5511944939323"><i class="uil uil-whatsapp"></i></a>
                         <p>Front end junior.</p>
-                        <p>Sou apaixonado por tecnologias, desenvolver e proporcionar algo inovador não tem preço. Front end é o meu mundo, fazer os sonhos das pessoas se tornarem realidade é algo incrivel. #frontend </p>
+                        <p>Sou apaixonado por tecnologias, desenvolver e proporcionar algo inovador não tem preço. Front end é o meu mundo, fazer os sonhos das pessoas se tornarem realidade é algo incrivel. #frontend.</p>
                         
                         <a href=" http://wa.me/5511944939323" class="btn-contact-me btn">Contact Me</a>                        
-                    </div>                
+                    </div>  
+                    
+                    
                 </div>
         </section>
 
@@ -94,7 +96,7 @@
              <!--CURRICULO-->  
                             <form action="Curriculo.pdf"> 
                                     <div class="curriculo">                                     
-                                            <button class="btn-curriculo btn" type="submit">Download CV <i class="uit uit-download-alt"></i>
+                                            <button class="btn-curriculo btn" type="submit">Download CV<i class="uil uil-download-alt"></i>
                                             </button>
                                     </div>
                             </form>
@@ -113,8 +115,8 @@
                         <img src="./_img/html5.svg" alt="icone html5">
                         <img src="./_img/css3-simple.svg" alt="icone css3">
                         <img src="./_img/java-script.svg" alt="icone javascript">
-                        <img src="./_img/bootstrap.svg" alt="icone boostrap">
-                        <img src="./_img/github.svg" alt="icone github">
+                        <img src="./_img/bootstrap.svg" class="icon-space" alt="icone boostrap">
+                        <img src="./_img/github.svg" class="icon-space" alt="icone github">
                         <img src="./_img/figma.svg" alt="icone figma">                                                     
                     </div>
                 </div>                             
@@ -167,7 +169,7 @@
                     <!--EXPERIENCIAS-->
                     <div id="box_exper">
                         <div class="box_experience" id="box_experience">                                                      
-                            <div class="grid-item"><i class="uil uil-calender"></i>
+                            <div class="grid-item">
                                 <span class="title_item">Desenvolvedor</span>
                                 <p>InnovSoftware</p>
                                 <p><i class="uil uil-calender"></i>02/2022 - Atual</p>
@@ -200,193 +202,291 @@
                         <h2>Projects</h2>
                         <p>My projects.</p>
                     </div>
-                    <div class="carrossel">                            
+                    <div class="projects-cards"><!--antiga class carrossel-->                            
 
-                        <div class="flex_port_item">
+                        <div class="card">
                             <a href="https://www.studiouniversofeminino.com.br"><img src="_img/studio-universo.png" alt="thumbs studio"></a>
 
-                            <div class="port_item_description">
+                            <div class="card_description">
                                 <h4>Freela - Studio </h4>
+                                <div class="icon-card-tech">
+                                    <i class="uil uil-html5" title="html5"></i>
+                                    <i class="uil uil-css3-simple" title="css3"></i>
+                                    <i class="uil uil-java-script" title="javascript"></i>
+                                    <i class="uil uil-github" title="github"></i>                                    
+                                    <i class="fa-brands fa-figma" title="figma"></i>                                    
+                                </div>
                                 <p>Esse projeto foi um freela, objetivo proposto foi atrair clientes de qualquer localidade, foi utilizado as tecnologias: html, css e javascript. Conceito de responsividade e design foram utilizados também.</p>
                                 
-                                <a href="https://www.studiouniversofeminino.com.br" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                <a href="https://www.studiouniversofeminino.com.br" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
 
-                        <div class="flex_port_item">
+                        <div class="card">
                             <a href="https://eletronicajaclesom.netlify.app/"><img src="_img/eletronica.png" alt="thumb eletronica"></a>
 
-                            <div class="port_item_description">
+                            <div class="card_description">
                                 <h4>Freela - Eletrônica</h4>
+                                <div class="icon-card-tech">
+                                    <i class="uil uil-html5" title="html5"></i>
+                                    <i class="uil uil-css3-simple" title="css3"></i>
+                                    <i class="uil uil-java-script" title="javascript"></i>
+                                    <i class="uil uil-github" title="github"></i>                                    
+                                    <i class="fa-brands fa-figma" title="figma"></i>                                    
+                                </div>
                                 <p>Esse projeto foi um freela, objetivo proposto aumentar a visibilidade e a demanda de serviços, foi utilizado as seguintes tecnologias: html, slick slider, css e javascript. Conceito de responsividade e design foram utilizados também.</p>
                                 
-                                <a href="https://eletronicajaclesom.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                <a href="https://eletronicajaclesom.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
 
-                        <div class="flex_port_item">
+                        <div class="card">
                             <a href="https://landing-page-ingles.netlify.app/"><img src="_img/landing-page.png" alt="thumb landing page"></a>
 
-                            <div class="port_item_description">
+                            <div class="card_description">
                                 <h4>Landing Page</h4>
+                                <div class="icon-card-tech">
+                                    <i class="uil uil-html5" title="html5"></i>
+                                    <i class="uil uil-css3-simple" title="css3"></i>                                    
+                                    <i class="uil uil-github" title="github"></i>           
+                                </div>
                                 <p>Esse é um clone de uma landing page  realizado apenas para melhorar as habilidades. Obs: Todos direitos reservado <br><q><a href="https://www.agoraeufaloacademy.com/serie-gratuita" target="_blank" style="color: orange;">www.agoraeufaloacademy.com/serie-gratuita</a></q></p>
                                 
-                                <a href="https://landing-page-ingles.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                <a href="https://landing-page-ingles.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
 
-                        <div class="flex_port_item">
+                        <div class="card">
                             <a href="https://desafiochuva.netlify.app/"><img src="_img/desafioChuva.png" alt="thumb landing page"></a>
 
-                            <div class="port_item_description">
+                            <div class="card_description">
                                 <h4>Teste - empresa</h4>
+                                <div class="icon-card-tech">
+                                    <i class="uil uil-html5" title="html5"></i>
+                                    <i class="uil uil-css3-simple" title="css3"></i>
+                                    <i class="uil uil-java-script" title="javascript"></i>
+                                    <i class="uil uil-github" title="github"></i>                           
+                                </div>
                                 <p>Esse foi um teste de uma empresa para preencher a vaga de (estágio front end), foi fornecido layout feito no figma. Conclui esse desafio usando as tech, html,css, flexbox<br></p>
                                 
-                                <a href="https://desafiochuva.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                <a href="https://desafiochuva.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://seupet.netlify.app/"><img src="_img/Petshop.png" alt="thumb pizzaria"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4> Petshop</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>
+                                        <i class="uil uil-java-script" title="javascript"></i>
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                        <i class="fa-brands fa-figma" title="figma"></i>
+                                        <i class="fa-brands fa-bootstrap" title="boostrap"></i>
+                                    </div>
                                     <p>Site desenvolvido para colocar em prática os conhecimentos adquirido no curso de bootstrap, antes de codificar desenvolvi o prototipo no figma e posteriomente a codificação</p>
                                 
-                                    <a href="https://seupet.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://seupet.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://pizzamia3.netlify.app/"><img src="_img/pizzaMia.png" alt="thumb pizzaria"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4> Website - PizzaMiaIII</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>
+                                        <i class="uil uil-java-script" title="javascript"></i>
+                                        <i class="uil uil-github" title="github"></i>                                
+                                    </div>
                                     <p>Site desenvolvido apenas para colocar em práticar tecnologias: html, css, javascript e bootstrap. Foi desenvolvido usando conceitos de design, resposividade.</p>
                                 
-                                    <a href="https://pizzamia3.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://pizzamia3.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                            
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://clonemercadolivre.netlify.app/"><img src="_img/cloneML.png" alt="thumb mercado livre"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4> Website - Mercado livre</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                 
+                                    </div>
                                     <p>Clone da pagina de anuncios do mercado livre, esse projeto foi desenvolvido para testa minhas habilidades nas tecnologias html e css. </p>
                                 
-                                    <a href="https://clonemercadolivre.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://clonemercadolivre.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://fisiobody.netlify.app/"><img src="./_img/fisio.png" alt="thumb fisioterapia"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Website - Fisioterapia</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>
+                                        <i class="uil uil-java-script" title="javascript"></i>
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                        <i class="fa-brands fa-figma" title="figma"></i>                                    
+                                    </div>
                                     <p>Projeto feito con conhecimentos adquirido no curso de front end, usando conceitos de desgin e responsividade. Projeto realizado no figma e posteriomente desenvolvido.</p>
                                 
-                                    <a href="https://fisiobody.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://fisiobody.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://conceitoresponsive.netlify.app/"><img src="_img/mobilefirst.png" alt="thumb projeto mobile"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Website - Mobile first</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Projeto feito no curso de web design, utilizando a metodologia mobile first, demostrando as vantagens e praticidade da metodologia </p>
                                 
-                                    <a href="https://conceitoresponsive.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://conceitoresponsive.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://projects-strata.netlify.app/"><img src="_img/projects-strata.png" alt="thumb projeto strata"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Website - Strata</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>
+                                        <i class="uil uil-github" title="github"></i>  
+                                    </div>
                                     <p>Projeto feito no curso de web design, colocando em pratíca todo conhecimento adquirido no modulo do curso. Conceitos de semântica, tabelas, tags para expor codigos, lista ordenada. Porém não é repsonsivo. </p>
                                 
-                                    <a href="https://projects-strata.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://projects-strata.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://gamesnipe.netlify.app/"><img src="_img/tela-loginGame.png" alt="thumg tela de login"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Tela Login game</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>
+                                        <i class="uil uil-java-script" title="javascript"></i>
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Projeto feito para explorar a criatividade, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://gamesnipe.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://gamesnipe.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://card-frontendmentor2.netlify.app/"><img src="_img/cardFrontMEntor.png" alt="thumb card"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Card Frontend Mentor</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                   
+                                    </div>
                                     <p>Desafio do frontend mentor concluido, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://card-frontendmentor2.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://card-frontendmentor2.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://clone-facebook-login.netlify.app/"><img src="_img/telaFacebook.png" alt="thumg facebook"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Clone da tela de login facebook</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Clone da tela de login do facebook, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM e conceitos de mobile first. </p>
                                 
-                                    <a href="https://clone-facebook-login.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://clone-facebook-login.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://clone-wise-up.netlify.app/"><img src="_img/telaWiseUp.png" alt="thumb wiseup"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Clone da tela de login do Wise up</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>
+                                        <i class="uil uil-java-script" title="javascript"></i>
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Clone da tela de login do Wise up, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM e responsividade. </p>
                                 
-                                    <a href="https://clone-wise-up.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://clone-wise-up.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://3-cardfrontendmentor.netlify.app/"><img src="_img/3cardFrontendMentor.png" alt="thumb card"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Card Frontend Mentor</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Desafio do frontend mentor concluido, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://3-cardfrontendmentor.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://3-cardfrontendmentor.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://card-done-frontendmentor.netlify.app/"><img src="_img/card-frontendMentor.png" alt="thumb card"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Card Frontend Mentor</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Desafio do frontend mentor concluido, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://card-done-frontendmentor.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://card-done-frontendmentor.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
 
-                            <div class="flex_port_item">
+                            <div class="card">
                                 <a href="https://teste-webdesign.netlify.app/"><img src="_img/teste-landing-page.png" alt="thumb lamding page"></a>
 
-                                <div class="port_item_description">
+                                <div class="card_description">
                                     <h4>Landing page</h4>
+                                    <div class="icon-card-tech">
+                                        <i class="uil uil-html5" title="html5"></i>
+                                        <i class="uil uil-css3-simple" title="css3"></i>                                        
+                                        <i class="uil uil-github" title="github"></i>                                    
+                                    </div>
                                     <p>Desafio de uma landing page, colocando em pratíca todo conhecimento adquirido em cursos. Conceitos de semântica, usando a metodologia BEM, totalmente responsivo. </p>
                                 
-                                    <a href="https://teste-webdesign.netlify.app/" class="btn btn-port_item" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
+                                    <a href="https://teste-webdesign.netlify.app/" class="btn card-btn" target="_blank">Show<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>  
                     </div>
