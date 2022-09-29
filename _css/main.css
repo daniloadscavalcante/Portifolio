@@ -390,9 +390,19 @@ body{
 .card:hover{
     box-shadow: 0 0 15px rgba(11, 135, 147, .5);  
 }
+.card a:first-child{    
+    overflow: hidden;
+    border-radius: 7px;
+}
 .card img{
     width: 100%;
-    box-shadow: 0px 0px 1px;
+    border-radius: 7px;
+    transition: all 1s linear;
+    display: block;
+}
+.card img:hover{
+    transform: scale(1.03);
+    border-radius: 7px;
 }
 .card h4{
     margin: 10px auto;
@@ -411,13 +421,29 @@ body{
 .icon-card-tech{
     color: #fff;
     display: block;
-              
+    width: 100%;              
 }
 .icon-card-tech i{
    font-size: 16px;
    margin: 0;
    padding: 0;
 }
+.btn-detail{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;   
+    display: block;
+    margin-left: 2px; 
+    overflow: hidden;      
+}
+.btn-detail i{
+    position: relative;
+    top: 2px;   
+    left: -4px; 
+    font-size: 18px;
+}
+
 .card_description p{
     font-size: 0.8rem;
     font-family: 'Open Sans', sans-serif;
@@ -568,7 +594,7 @@ body{
         color: rgb(214, 199, 199, .1);
         font-size: 2.5rem; 
         position: absolute;
-        bottom: 60px;        
+        bottom: 130px;        
         animation: jump-arrow 1s infinite ease-in-out alternate;
     }
     @keyframes jump-arrow{
@@ -611,6 +637,7 @@ body{
       padding-bottom: 10%;
       position: relative;
    }  
+   /*Arrow down*/
    .capa::after{    
     font-size: 4rem;    
    }
