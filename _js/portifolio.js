@@ -1,5 +1,24 @@
 
 const navLink = document.querySelectorAll('.nav_link');
+const vermais = document.getElementById('btn-ver-mais');
+const boxCard = document.querySelector('.second-section-card');
+const btnDetalhe = document.querySelectorAll('.card .card_description .btn-detail');
+const descricacao = document.querySelectorAll('.card .card_description > p');
+
+btnDetalhe.forEach(item =>{
+    item.addEventListener('click', teste);    
+});
+
+function teste(){
+    descricacao.style.display = 'none';
+}
+
+vermais.addEventListener('click', () =>{
+    boxCard.classList.toggle('active-section-card');
+    document.querySelector('.btn-ver-mais i').classList.toggle('active');
+});
+
+
 
 navLink.forEach(item => {
     item.addEventListener('click', removeNav);
@@ -10,8 +29,7 @@ function removeNav(){
 
 /*Hide/Show  menu mobile */
 function abrirMenu() {
-    document.getElementById("nav_wrapper").style.top="0";   
-    
+    document.getElementById("nav_wrapper").style.top="0";       
 }
 function closeMenu(){
     document.querySelector(".nav_wrapper").style.top="-100%";    
@@ -50,9 +68,10 @@ function showEducation(){
     document.getElementById("box_educa").style.display = "block";
  }
 
- /*Slider */
- $('.carrossel').slick();
 
+function showVermais(){
+    
+}
 
 
 

@@ -370,6 +370,12 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+.second-section-card{
+    display: none;
+}   
+.active-section-card{
+    display: grid;
+}
 .card{
     padding: 10px;
     text-align: left;
@@ -441,7 +447,7 @@ body{
     font-size: 0.8rem;
     font-family: 'Open Sans', sans-serif;
     color: rgb(209, 198, 198);
-    display: none;
+    
 }
 .card .card-btn{
     padding: 6px 1.5rem;         
@@ -456,6 +462,7 @@ body{
     text-align:right;
     margin-left: 7px;    
 }
+
 .btn-ver-mais{
     width: 72px;
     color: #fff;
@@ -469,12 +476,15 @@ body{
     transform: rotate(0deg); 
     transition: all 0.5s linear;     
 }
-   .active{
+
+   .btn-ver-mais .active{
     transform: rotate(180deg);    
     display: inline-block; 
     transition: all 0.5s linear;
 }
-
+.active-descricao{
+    display: block;
+}
 /*====Contact Me====*/
 .box_contactme{
     width: 80%;
@@ -656,7 +666,7 @@ body{
    
    .box-introduction p:nth-last-child(2){
     max-width: 450px;
-}
+    }
    /*about*/   
    .about h2{
     display: none;
@@ -695,7 +705,5 @@ body{
     padding-bottom: 10px;
    }
     /*estilos do  cards================*/
-    .second-section-card{
-        display: none;
-    }   
+    
 }
