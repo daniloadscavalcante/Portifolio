@@ -5,13 +5,22 @@ const boxCard = document.querySelector('.second-section-card');
 const btnDetalhe = document.querySelectorAll('.card .card_description .btn-detail');
 const descricacao = document.querySelectorAll('.card .card_description > p');
 
+
 btnDetalhe.forEach(item =>{
-    item.addEventListener('click', teste);    
+    item.addEventListener('click', teste);       
+        
 });
 
-function teste(){
-    descricacao.style.display = 'none';
+function teste(event){
+     const click = event.currentTarget
+        for (i = 0; i < descricacao.length; i++){
+            if(click === btnDetalhe[i]){
+                descricacao[i].classList.toggle('active-descricao');
+            } 
+        }
 }
+
+
 
 vermais.addEventListener('click', () =>{
     boxCard.classList.toggle('active-section-card');
