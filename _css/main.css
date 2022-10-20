@@ -63,7 +63,12 @@ body{
 }
 .nav_header .name-perfil{
     color: #0b8793;    
-    font-size: 1.5rem;    
+    font-size: 1.5rem;  
+    width: 200px;      
+}
+.nav_header .name-perfil i{
+        position: relative;
+        top: 2px;
 }
 .nav_wrapper{   
     position: fixed;
@@ -704,7 +709,6 @@ body{
    }
    .box_footer{
     padding-bottom: 10px;
-   }
-    /*estilos do  cards================*/
+   }    
     
 }

@@ -7,11 +7,11 @@ const descricacao = document.querySelectorAll('.card .card_description > p');
 
 
 btnDetalhe.forEach(item =>{
-    item.addEventListener('click', teste);       
+    item.addEventListener('click', showDescription);       
         
 });
 
-function teste(event){
+function showDescription(event){
      const click = event.currentTarget
         for (i = 0; i < descricacao.length; i++){
             if(click === btnDetalhe[i]){
@@ -21,10 +21,10 @@ function teste(event){
 }
 
 
-
 vermais.addEventListener('click', () =>{
     boxCard.classList.toggle('active-section-card');
     document.querySelector('.btn-ver-mais i').classList.toggle('active');
+    
 });
 
 
