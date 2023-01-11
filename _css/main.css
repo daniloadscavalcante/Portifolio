@@ -219,8 +219,7 @@ body{
 }
 
 /*====About Me====*/
-.about_photo_me img{
-  border-radius: 40px 100px 40px 110px;
+.about_photo_me img{  
   width:170px;  
   padding-top: 15px;
 }
@@ -234,7 +233,7 @@ body{
     padding: 2.5rem 20px;
     font-size: 1rem; 
     font-family: Roboto;      
-    text-align: justify;      
+    text-align: center;      
     color:rgb(209, 198, 198);
     line-height: 1.4;        
 }
@@ -667,7 +666,7 @@ body{
     font-size: 4rem;    
    }
    .capa-img{
-    max-width: 400px;
+    max-width: 330px;
    }
    
    .box-introduction p:nth-last-child(2){
@@ -678,8 +677,8 @@ body{
     display: none;
    }
    .about_photo_me img{    
-    width: 250px;  
-    padding-top: 15px;
+    width: 450px;  
+    padding-top: 100px;
    }    
    .about_box_description{
     width: 85%;
