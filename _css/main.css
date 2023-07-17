@@ -457,7 +457,8 @@ body{
     display: none;
 }
 .card .card-btn{
-    padding: 6px 1.5rem;         
+    padding: 6px 1.5rem;  
+      
     margin: 7px auto;
     font-weight: 600;     
     font-size: 0.8rem;  
@@ -467,7 +468,7 @@ body{
 }
 .card .card-btn i {
     text-align:right;
-    margin-left: 7px;    
+    margin-left: 7px;       
 }
 
 .btn-ver-mais{
